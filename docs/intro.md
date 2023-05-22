@@ -77,4 +77,4 @@ Para compilar se utiliza el JDK 11
 MongoDB
 Base de datos de mongodb para nuestra area local
 
-## Levantamiento del proyecto (compilación, docker, k8s)
+
