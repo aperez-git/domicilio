@@ -19,10 +19,10 @@ Para atender la demanda, KFC tiene una aplicación propia de distribución y ent
 
 Esta aplicación ha permitido atender (fin de semana), por país:
 
-Ecuador: entre 14000 y 17000 pedidos, promedio de 14 a 16 pedidos recibidos por minuto  
-Colombia: entre 13000 y 15000 pedidos, promedio de 15 a 17 pedidos recibidos por minuto  
-Venezuela: entre 500 y 1200 pedidos, promedio de 1 a 2 pedidos recibidos por minuto  
-Chile: entre 4000 y 12000 pedidos, promedio de 6 a 17 pedidos recibidos por minuto  
+Ecuador: entre 14000 y 17000 pedidos; de 14 a 16 pedidos recibidos por minuto  
+Colombia: entre 13000 y 15000 pedidos; de 15 a 17 pedidos recibidos por minuto  
+Venezuela: entre 500 y 1200 pedidos; de 1 a 2 pedidos recibidos por minuto  
+Chile: entre 4000 y 12000 pedidos; de 6 a 17 pedidos recibidos por minuto  
 
 
 </td>
