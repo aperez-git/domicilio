@@ -40,9 +40,11 @@ Esta facilidad está supeditada al rol del usuario y sólo está disponible en e
 Otra acción que se puede ejecutar es la consulta de los errores:
 ![Front-end-Domicilio-Pedidos-no-inyectados-Payload-consulta](/img/Domicilio-Frontend-Logs-Domicilio-Pedidos-no-inyectados-errores.png)
 
-Esta acción permite ver los errores que se han producido para un pedido especificado:
+Esta acción permite ver los errores que se han producido para un pedido especificado:  
 ![Front-end-Domicilio-Pedidos-no-inyectados-Payload-consulta](/img/Domicilio-Frontend-Logs-Domicilio-Pedidos-no-inyectados-errores-detalle.png)  
-Para un error en particular, se puede ejecutar la acción de consultar los eventos generados:
+
+Para un error en particular, se puede ejecutar la acción de consultar los eventos generados:  
+
 ![Front-end-Domicilio-Pedidos-no-inyectados-Payload-consulta](/img/Domicilio-Frontend-Logs-Domicilio-Pedidos-no-inyectados-errores-detalle-mensajes.png)  
 
 Por último, existe la posibilidad de reinyectar un pedido:
