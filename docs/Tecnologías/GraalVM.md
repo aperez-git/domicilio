@@ -1,0 +1,4 @@
+### GraalVM 11
+[GraalVM](https://unpocodejava.com/2020/02/27/que-es-graalvm-una-jvm-que-permite-generar-imagenes-nativas/) es una máquina virtual Java, creada por Oracle, para ejecutar aplicaciones escritas en JavaScript, Python, Ruby, R, en lenguajes JVM como Java, Scala, Groovy, Kotlin, Clojure, y lenguajes basados en LLVM como C y C++. Entre sus principales características:
+- Interoperabilidad entre lenguajes en un entorno compartido; permitiendo ver cómo sobre Java se puede ejecutar Javascript, R, Python, entre otros lenguajes. 
+- Permite generar imágenes nativas. Las imágenes nativas compiladas con GraalVM reducen el tiempo de arranque y el consumo de memoria de las aplicaciones basadas en JVM.
