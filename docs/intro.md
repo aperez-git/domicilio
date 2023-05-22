@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introducción
 
-KFC tiene una cadena de suministro de pedidos que atiende solicitudes de restaurantes esparcidos a lo largo de distintos países de Suramérica. 
+KFC tiene una cadena de suministro de pedidos que atiende solicitudes de restaurantes esparcidos a lo largo de distintos países de Suramérica: Ecuador (sede principal), Colombia, Venezuela, Chile.
 
 <table>
 <tr>
@@ -17,7 +17,13 @@ KFC tiene una cadena de suministro de pedidos que atiende solicitudes de restaur
 
 Para atender la demanda, KFC tiene una aplicación propia de distribución y entrega de pedidos, llamada APP DOMICILIO, que ofrece opciones de reparto y comida para llevar desde el establecimiento KFC más cercano.
 
-KFC también trabaja en colaboración con competidores indirectos para ampliar su base de clientes. Aplicaciones como XXXXXX y YYYYYY cuentan con una amplia red de más de ZZZZZZ restaurantes en la región. Esto hace que sea una opción obvia para la mayoría de los consumidores.
+Esta aplicación ha permitido atender, por país:
+
+Ecuador: entre 14000 y 17000 pedidos (fin de semana), promedio de 14 a 16 pedidos recibidos por minuto
+Colombia: entre 13000 y 15000 pedidos (fin de semana), promedio de 15 a 17 pedidos recibidos por minuto
+Venezuela: entre 500 y 1200 pedidos (fin de semana), promedio de 1 a 2 pedidos recibidos por minuto
+Chile: entre 4000 y 12000 pedidos (fin de semana), promedio de 6 a 17 pedidos recibidos por minuto
+
 
 </td>
 </tr>
