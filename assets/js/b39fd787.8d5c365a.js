@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdomicilio=self.webpackChunkdomicilio||[]).push([[9418],{9014:o=>{o.exports=JSON.parse('{"permalink":"/domicilio/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
