@@ -46,56 +46,5 @@ Si la conexión es exitosa, se debe obtener un resultado como el que muestra la 
 
 A través de esta acción, se elimina el local de la base de datos: ![Front-end-Locales-Eliminar](/img/Domicilio-Frontend-Locales-Eliminar.png) 
 
-Esta acción requiere confirmación, para proceder: ![Front-end-Locales-Eliminar-Confirmacion](/img/Domicilio-Frontend-Locales-Eliminar-Confirmacion.png) 
-
-<table>
-<tr>
-<td>
-Una vez registrado el local, se pueden modificar los datos del mismo a través de la Acción Editar. 
-
-:::note Importante
-Esta acción permite editar el nombre del usuario y la contraseña. 
-:::
-</td>
-<td>
-
-![Front-end-Locales-Editar](/img/Domicilio-Frontend-Locales-Editar.png)
-
-</td>
-</tr>
-<tr>
-<td>
-
-![Front-end-Locales-BDD](/img/Domicilio-Frontend-Locales-Ping-BDD.png)
-
-</td>
-<td>
-A través de esta acción, se verifica el acceso a la base de datos
-
-
-</td>
-</tr>
-<tr>
-<td>
-A través de esta acción, se verifica el acceso al servidor 
-</td>
-<td>
-
-![Front-end-Locales-Server](/img/Domicilio-Frontend-Locales-Ping-Server.png)
-
-</td>
-</tr>
-<tr>
-<td>
-
-![Front-end-Locales-Eliminar](/img/Domicilio-Frontend-Locales-Eliminar.png)
-
-</td>
-<td>
-A través de esta acción, se elimina el local de la base de datos
-
-
-</td>
-</tr>
-</table>
+Esta acción requiere confirmación, para proceder: ![Front-end-Locales-Eliminar-Confirmacion](/img/Domicilio-Frontend-Locales-Eliminar-Confirmacion.png)  
 
