@@ -4,6 +4,13 @@ sidebar_position: 2
 
 # Instalación de Kong
 
+:::note Importante
+La instalación de Kong involucra la ejecución de tres pasos:
+- Instalación de Chocolatey
+- Instalación de Helm
+- Instalación de Kong
+:::  
+
 # Instalación de Chocolatey
 En la página de Chocolatey (https://chocolatey.org/install), seleccionar el modo individual para instalar.
 
@@ -31,8 +38,10 @@ The Kubernetes package manager...
 
 # Instalación de Kong: 
 
-**helm repo add kong https://charts.konghq.com** 
+```bash
+helm repo add kong https://charts.konghq.com** 
 
-**helm repo update** 
+helm repo update** 
 
-**helm install kong/kong --generate-name --set ingressController.installCRDs=false** 
+helm install kong/kong --generate-name --set ingressController.installCRDs=false**  
+```
