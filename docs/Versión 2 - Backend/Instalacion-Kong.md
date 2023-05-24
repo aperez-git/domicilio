@@ -12,6 +12,7 @@ La instalación de Kong involucra la ejecución de tres pasos:
 :::  
 
 # Instalación de Chocolatey
+```bash 
 En la página de Chocolatey (https://chocolatey.org/install), seleccionar el modo individual para instalar.
 
 Abrir una sesión de PowerShell en modo administrador. 
@@ -27,14 +28,17 @@ Ahora, se ejecuta el siguiente comando:
 **Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))** 
 
 Después de la instalación, ejecutar el comando **choco /?**, para ver la lista de funciones. 
+```
 
 # Instalación de Helm: 
 
-**choco install kubernetes-helm** 
+```bash
+choco install kubernetes-helm** 
 
 Ejecución del comando helm 
 
 The Kubernetes package manager... 
+```
 
 # Instalación de Kong: 
 
