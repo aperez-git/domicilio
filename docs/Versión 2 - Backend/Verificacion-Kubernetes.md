@@ -7,6 +7,12 @@ sidebar_position: 6
 
 # Verificación en Kubernetes
 
+:::caution Precaución  
+Se debe verificar que `Docker Desktop` esté activo, antes de ejecutar cualquiera de los comandos o acciones que aparecen en esta parte. 
+:::
+
+
+
 El panel de control de Kubernetes debe ser desplegado (deployed), antes de ser usado, para lo cual se abre una sesión de la ventana de comandos (CMD) o PowerShell y se ejecuta el siguiente comando:
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
