@@ -19,7 +19,7 @@ Se debe verificar que `Docker Desktop` esté activo, antes de ejecutar cualquier
 
 En la ventana de comandos (CMD) o PowerShell, se ejecuta el siguiente comando:
 
-```
+```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
 Dá como resultado:
@@ -46,7 +46,8 @@ El acceso al panel sólo es posible si el usuario está registrado en el espacio
 
 ### Creación de la cuenta de servicio
 Se crea un archivo de manifiesto, con el nombre dashboard-adminuser.yaml y se guardan las siguientes especificaciones:  
-```
+
+```yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -55,17 +56,19 @@ metadata:
 ```  
 
 En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:
-```
+
+```bash
 kubectl apply -f dashboard-adminuser.yaml  
 
 Dá como resultado:
-serviceaccount/admin-user created
 
+serviceaccount/admin-user created  
 ```  
 
 ### Concesión de permisos de administración  
 A la cuenta creada en el paso anterior, se le deben asignar permisos de administrador, para un adecuado manejo del panel de Kubernetes, para lo cual se crea un archivo de manifiesto, en donde se guardan las siguientes especificaciones:
-```
+
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
@@ -78,11 +81,13 @@ subjects:
 - kind: ServiceAccount
   name: admin-user
   namespace: kubernetes-dashboard  
-```
+```  
+
 El archivo se guarda con el nombre k8s-cluster-role-binding.yaml.
 
-En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:
-```
+En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:  
+
+```bash
 kubectl create -f k8s-cluster-role-binding.yaml  
 
 Dá como resultado:
@@ -94,7 +99,8 @@ clusterrolebinding.rbac.authorization.k8s.io/admin-user created
 Para completar los pasos para el ingreso al panel de Kubernetes, se debe generar el token portador o de autorización (bearer token).
 
 En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:
-```
+
+```bash
 kubectl -n kubernetes-dashboard create token admin-user  
  
 Generando el token de autorización de acceso:
@@ -103,14 +109,15 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IjVJR3lYdnRtNTZJSkxEMG9sY3pmWl9GNzJUZWVnTzlOSnZkOUx1
 ```  
 
 La activación del acceso al panel de Kubernetes, requiere, nuevamente, el uso de la herramienta kubectl, ejecutando el siguiente comando:  
-```
+
+```bash
 kubectl proxy
 
 Dá, como resultado:
 
 Starting to serve on 127.0.0.1:8001
+```  
 
-```
 :::caution Precaución  
 El anterior comando se debe ejecutar en una ventana aparte, separado del resto de utilidades que se están usando. 
 :::
