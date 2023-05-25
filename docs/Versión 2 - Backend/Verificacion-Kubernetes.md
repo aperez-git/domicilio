@@ -102,21 +102,25 @@ Generando el token de autorización de acceso:
 eyJhbGciOiJSUzI1NiIsImtpZCI6IjVJR3lYdnRtNTZJSkxEMG9sY3pmWl9GNzJUZWVnTzlOSnZkOUx1VF90YTAifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjg0OTY1MTM0LCJpYXQiOjE2ODQ5NjE1MzQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJhZG1pbi11c2VyIiwidWlkIjoiZjU0MmM3OTgtY2M0Yi00ZWMwLTg5MzItNGIxZmQ3ZmM4ZWQxIn19LCJuYmYiOjE2ODQ5NjE1MzQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlcm5ldGVzLWRhc2hib2FyZDphZG1pbi11c2VyIn0.mi7Nff5bmA2SzDLjlKhg0j40Ul7UqvIXgyVucwW1ZT6xu-3bYgWvJvDH0lUPA8G2aAHxf61N6oC2L4mHKJ26jHS-mCgeDmtdloC24FfMrolxmwBDRV9c0HcoKKVRP04O8b_QW1E6JY2IgEWGLYcIkhkhyZtArAlDU5eU-7K8chQJGv7tgjf-KH9KuLCx5UCwsa4xRwUkjWwA9inUZSyChX7iJrJBQIcVGvb2J-Qk8dD9Ol48-gxwncKwHQwDEjj8qr90S_8pfwD33hd3ghz-7gObT36eaFYHjikGzZDHOSXWrsWyawGjS7--Z_Tk6L78xK3k4UJFic0cE8e75K6lCQ
 ```  
 
-Habilitar el acceso al panel de control de Kubernetes (Dashboard), utilizando la herramienta de línea de comandos kubectl, ejecutando el siguiente comando:
+La activación del acceso al panel de Kubernetes, requiere, nuevamente, el uso de la herramienta kubectl, ejecutando el siguiente comando:  
+```
+kubectl proxy
 
-![Acceso al panel de control](/img/Kubernetes-kubectl-proxy-acceso.png)  
-Obtener un token de portador (Bearer Token) para ingresar al panel de control, ejecutando el siguiente comando:
+Dá, como resultado:
 
-**kubectl -n kubernetes-dashboard create token admin-user**
+Starting to serve on 127.0.0.1:8001
 
-Debería generar un resultado como el siguiente:
+```
+:::caution Precaución  
+El anterior comando se debe ejecutar en una ventana aparte, separado del resto de utilidades que se están usando. 
+:::
 
-![Token Dashboard de Kubernetes](/img/Token-de-acceso-al-panel-de-Kubernetes.png)
 
 En el navegador web, mostrar el panel de control a través del comando:
 
-**http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/**
-
+```
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+```
 El token generado anteriormente, se copia y pega en la línea:
 
 
