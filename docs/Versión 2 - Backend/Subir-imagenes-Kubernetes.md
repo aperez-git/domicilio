@@ -5,26 +5,31 @@ sidebar_position: 5
 # Subir las imágenes a Kubernetes
 
 Desde el directorio en donde se encuentra el proyecto, (por ejemplo: 
-C:\Users\f-perez\IdeaProjects\compras-programadas V2), se ejecuta el siguiente comando:
+C:\Users\f-perez\IdeaProjects\compras-programadas V2), se ejecuta el siguiente comando:  
 
-**kubectl apply -f "C:\Users\f-perez\IdeaProjects\compras-programadas V2\uk8s-resources\kubernetes\config-k8s\database-config-localhost.yaml"**
+```bash
+kubectl apply -f "C:\Users\f-perez\IdeaProjects\compras-programadas V2\uk8s-resources\kubernetes\config-k8s\database-config-localhost.yaml"
+```  
 
 :::info
 
-Resultado:
-
+Resultado:  
+```bash
 secret/database-config-atlas configured
+```  
 
 :::
 
 
-Ahora, se ejecuta el siguiente comando:
+Ahora, se ejecuta el siguiente comando:  
 
-**kubectl apply -f "C:\Users\f-perez\IdeaProjects\compras-programadas V2\uk8s-resources\k8s-deployer\install-localhost.yaml"**
+```bash
+kubectl apply -f "C:\Users\f-perez\IdeaProjects\compras-programadas V2\uk8s-resources\k8s-deployer\install-localhost.yaml"
+```  
 
 :::info
 Resultado:
-
+```bash
 namespace/app-domicilio unchanged  
 rolebinding.rbac.authorization.k8s.io/distribuidor-queue unchanged  
 role.rbac.authorization.k8s.io/distribuidor-queue unchanged  
@@ -57,4 +62,5 @@ ingress.networking.k8s.io/api-health created
 deployment.apps/api-status created  
 service/api-status created  
 ingress.networking.k8s.io/api-status created
+```
 :::
