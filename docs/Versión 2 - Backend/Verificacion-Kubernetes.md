@@ -22,12 +22,13 @@ En la ventana de comandos (CMD) o PowerShell, se ejecuta el siguiente comando:
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
+Dá como resultado:
+
 namespace/kubernetes-dashboard unchanged
 serviceaccount/kubernetes-dashboard unchanged
 service/kubernetes-dashboard unchanged
 secret/kubernetes-dashboard-certs unchanged
 secret/kubernetes-dashboard-csrf configured
-Warning: resource secrets/kubernetes-dashboard-key-holder is missing the kubectl.kubernetes.io/last-applied-configuration annotation which is required by kubectl apply. kubectl apply should only be used on resources created declaratively by either kubectl create --save-config or kubectl apply. The missing annotation will be patched automatically.
 secret/kubernetes-dashboard-key-holder configured
 configmap/kubernetes-dashboard-settings unchanged
 role.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
@@ -39,7 +40,67 @@ service/dashboard-metrics-scraper unchanged
 deployment.apps/dashboard-metrics-scraper unchanged
 
 ```
+## Acceso al panel
 
+El acceso al panel sólo es posible si el usuario está registrado en el espacio de nombres del panel Kubernetes (kubernetes-dashboard), creado en el paso anterior, por lo que se deben ejecutar los siguientes pasos:
+
+### Creación de la cuenta de servicio
+Se crea un archivo de manifiesto, con el nombre dashboard-adminuser.yaml y se guardan las siguientes especificaciones:  
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin-user
+  namespace: kubernetes-dashboard  
+```  
+
+En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:
+```
+kubectl apply -f dashboard-adminuser.yaml  
+
+Dá como resultado:
+serviceaccount/admin-user created
+
+```  
+
+### Concesión de permisos de administración  
+A la cuenta creada en el paso anterior, se le deben asignar permisos de administrador, para un adecuado manejo del panel de Kubernetes, para lo cual se crea un archivo de manifiesto, en donde se guardan las siguientes especificaciones:
+```
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: admin-user
+  namespace: kubernetes-dashboard  
+```
+El archivo se guarda con el nombre k8s-cluster-role-binding.yaml.
+
+En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:
+```
+kubectl create -f k8s-cluster-role-binding.yaml  
+
+Dá como resultado:
+
+clusterrolebinding.rbac.authorization.k8s.io/admin-user created
+``` 
+
+### Generación del token de autorización
+Para completar los pasos para el ingreso al panel de Kubernetes, se debe generar el token portador o de autorización (bearer token).
+
+En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:
+```
+kubectl -n kubernetes-dashboard create token admin-user  
+ 
+Generando el token de autorización de acceso:
+
+eyJhbGciOiJSUzI1NiIsImtpZCI6IjVJR3lYdnRtNTZJSkxEMG9sY3pmWl9GNzJUZWVnTzlOSnZkOUx1VF90YTAifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjg0OTY1MTM0LCJpYXQiOjE2ODQ5NjE1MzQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJhZG1pbi11c2VyIiwidWlkIjoiZjU0MmM3OTgtY2M0Yi00ZWMwLTg5MzItNGIxZmQ3ZmM4ZWQxIn19LCJuYmYiOjE2ODQ5NjE1MzQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlcm5ldGVzLWRhc2hib2FyZDphZG1pbi11c2VyIn0.mi7Nff5bmA2SzDLjlKhg0j40Ul7UqvIXgyVucwW1ZT6xu-3bYgWvJvDH0lUPA8G2aAHxf61N6oC2L4mHKJ26jHS-mCgeDmtdloC24FfMrolxmwBDRV9c0HcoKKVRP04O8b_QW1E6JY2IgEWGLYcIkhkhyZtArAlDU5eU-7K8chQJGv7tgjf-KH9KuLCx5UCwsa4xRwUkjWwA9inUZSyChX7iJrJBQIcVGvb2J-Qk8dD9Ol48-gxwncKwHQwDEjj8qr90S_8pfwD33hd3ghz-7gObT36eaFYHjikGzZDHOSXWrsWyawGjS7--Z_Tk6L78xK3k4UJFic0cE8e75K6lCQ
+```  
 
 Habilitar el acceso al panel de control de Kubernetes (Dashboard), utilizando la herramienta de línea de comandos kubectl, ejecutando el siguiente comando:
 
