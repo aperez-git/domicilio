@@ -19,7 +19,7 @@ Se debe verificar que `Docker Desktop` esté activo, antes de ejecutar cualquier
 
 En la ventana de comandos (CMD) o PowerShell, se ejecuta el siguiente comando:
 
-```bash
+```bash title="Despliegue del panel"  
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
 Dá como resultado:
@@ -45,9 +45,9 @@ deployment.apps/dashboard-metrics-scraper unchanged
 El acceso al panel sólo es posible si el usuario está registrado en el espacio de nombres del panel Kubernetes (kubernetes-dashboard), creado en el paso anterior, por lo que se deben ejecutar los siguientes pasos:
 
 ### Creación de la cuenta de servicio
-Se crea un archivo de manifiesto, con el nombre dashboard-adminuser.yaml y se guardan las siguientes especificaciones:  
+Se crea un archivo de manifiesto, donde se guardan las siguientes especificaciones, para la creación de la cuenta:  
 
-```yaml
+```yaml title="dashboard-adminuser.yaml"
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -68,7 +68,7 @@ serviceaccount/admin-user created
 ### Concesión de permisos de administración  
 A la cuenta creada en el paso anterior, se le deben asignar permisos de administrador, para un adecuado manejo del panel de Kubernetes, para lo cual se crea un archivo de manifiesto, en donde se guardan las siguientes especificaciones:
 
-```yaml
+```yaml title="k8s-cluster-role-binding.yaml"
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
@@ -83,7 +83,6 @@ subjects:
   namespace: kubernetes-dashboard  
 ```  
 
-El archivo se guarda con el nombre k8s-cluster-role-binding.yaml.
 
 En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:  
 
@@ -100,7 +99,7 @@ Para completar los pasos para el ingreso al panel de Kubernetes, se debe generar
 
 En la ventana de comandos (CMD) o PowerShell, se despliega el archivo anterior, ejecutando el siguiente comando:
 
-```bash
+```bash 
 kubectl -n kubernetes-dashboard create token admin-user  
  
 Generando el token de autorización de acceso:
