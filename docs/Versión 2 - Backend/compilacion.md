@@ -2,14 +2,31 @@
 sidebar_position: 4
 ---
 
-# Compilación del código
+# Compilación del código (build)
+
+:::caution Precaución
+Antes de comenzar, se debe verificar lo siguiente:
+
+- _Docker Desktop_ debe estar funcionando
+- La _VPN_ debe estar funcionando
+:::  
 
 :::info
-El proceso de **compilación** requiere la aplicación de los siguientes comandos:
+El proceso de **compilación** requiere la aplicación de los siguientes comandos:  
 
-gradlew `MODULO-NAME`:clear &nbsp;&nbsp;&nbsp;_Este comando elimina los archivos creados durante las tareas de compilación anteriores_
+`Alternativa 1`:  
+```powershell title="En PowerShell"
+.\gradlew :`MODULO-NAME`:clean &nbsp;&nbsp;&nbsp;_Este comando elimina los archivos creados durante las tareas de compilación anteriores_
 
-gradlew `MODULO-NAME`:build -Dquarkus.package.type=native &nbsp;&nbsp;&nbsp;_Este comando sirve para crear un archivo ejecutable nativo a partir de una aplicación Java_
+.\gradlew :`MODULO-NAME`:build -Dquarkus.package.type=native &nbsp;&nbsp;&nbsp;_Este comando sirve para crear un archivo ejecutable nativo a partir de una aplicación Java_  
+```  
+
+`Alternativa 2`:  
+```shell title="En CMD"
+.\gradlew `MODULO-NAME`:clean &nbsp;&nbsp;&nbsp;_Este comando elimina los archivos creados durante las tareas de compilación anteriores_
+
+.\gradlew `MODULO-NAME`:build "-Dquarkus.package.type=native" &nbsp;&nbsp;&nbsp;_Este comando sirve para crear un archivo ejecutable nativo a partir de una aplicación Java_
+```  
 :::
 
 :::note
