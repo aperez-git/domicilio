@@ -7,49 +7,57 @@ sidebar_position: 4
 :::caution Precaución
 Antes de comenzar, se debe verificar lo siguiente:
 
-- _Docker Desktop_ debe estar funcionando
-- La _VPN_ debe estar funcionando
+- _Docker Desktop_ debe estar funcionando y el parámetro Memoria debe estar fijado a 10 Gb  
+![Docker-memory](/img/Docker-Rammemory.png)
+- Verificar que la conexión a Grupo KFC se encuentre activa:  
+![Conexion](/img/VPN-Conexion.png)
 :::  
 
-:::info
+:::tip Modo de compilación
+
+El proceso de compilación se puede realizar  
+- Abriendo el inductor de comandos (command prompt), haciendo clic en el menú Inicio y escribiendo cmd.
+- Abriendo una ventana de la herramienta Power Shell
+- En IntelliJ, abriendo una ventana de la herramienta Terminal y seleccionando uno de los modos indicados anteriormente  
+![Intellij-Terminal](/img/Intellij-Terminal.png)  
+El desarrollador está en libertad de elegir la alternativa que considere más conveniente. 
+:::
+
+
+:::info Ejecución del proceso  
 El proceso de **compilación** requiere la aplicación de los siguientes comandos:  
 
 `Alternativa 1`:  
 ```powershell title="En PowerShell"
-.\gradlew :`MODULO-NAME`:clean &nbsp;&nbsp;&nbsp;_Este comando elimina los archivos creados durante las tareas de compilación anteriores_
+.\gradlew :`MODULO-NAME`:clean  
 
-.\gradlew :`MODULO-NAME`:build -Dquarkus.package.type=native &nbsp;&nbsp;&nbsp;_Este comando sirve para crear un archivo ejecutable nativo a partir de una aplicación Java_  
+.\gradlew :`MODULO-NAME`:build -Dquarkus.package.type=native   
 ```  
 
 `Alternativa 2`:  
 ```shell title="En CMD"
-.\gradlew `MODULO-NAME`:clean &nbsp;&nbsp;&nbsp;_Este comando elimina los archivos creados durante las tareas de compilación anteriores_
+.\gradlew `MODULO-NAME`:clean 
 
-.\gradlew `MODULO-NAME`:build "-Dquarkus.package.type=native" &nbsp;&nbsp;&nbsp;_Este comando sirve para crear un archivo ejecutable nativo a partir de una aplicación Java_
+.\gradlew `MODULO-NAME`:build "-Dquarkus.package.type=native" 
 ```  
+
+En donde:  
+`clean`: _Este comando elimina los archivos creados durante las tareas de compilación anteriores_
+`build`: _Este comando sirve para crear un archivo ejecutable nativo a partir de una aplicación Java_
 :::
 
-:::note
+:::note 
 En donde `MODULO-NAME` se refiere a:
+- _admin_
 - _api-domicilio_ 
 - _api-pickup_ 
-- _api-status_ 
+- _authenticator_ 
 - _distribuidor-queue_ 
 - _health_ 
 - _log-entry_ 
 - _queue-resolver_
 :::
 
-:::tip
-
-El proceso de compilación se puede realizar
-- Abriendo una ventana de la herramienta Terminal
-- Abriendo el inductor de comandos (command prompt), haciendo clic en el menú Inicio y escribiendo cmd.
-- Abriendo una ventana de la herramienta Power Shell
-- Desde el editor
-
-El desarrollador está en libertad de elegir la alternativa que considere más conveniente. 
-:::
 
 A continuación, se muestra el proceso realizado desde el editor IntelliJ Idea.
 
