@@ -8,7 +8,7 @@ sidebar_position: 4
 Antes de comenzar, se debe verificar lo siguiente:
 
 - _Docker Desktop_ debe estar funcionando y el parámetro Memoria debe estar fijado a 10 Gb  
-![Docker-Rammemory-10gb](/img/Docker-Rammemory-10gb.png)
+![Docker-Rammemory-10gb](/img/Docker-Rammemory-10gb.png)  
 - Verificar que la conexión a Grupo KFC se encuentre activa:  
 ![Conexion](/img/VPN-Conexion.png)
 :::  
@@ -36,13 +36,13 @@ El proceso de **compilación** requiere la aplicación de los siguientes comando
 
 `Alternativa 2`:  
 ```shell title="En CMD"
-.\gradlew `MODULO-NAME`:clean 
+.\gradlew `MODULO-NAME`:clean  
 
 .\gradlew `MODULO-NAME`:build "-Dquarkus.package.type=native" 
 ```  
 
 En donde:  
-`clean`: _Este comando elimina los archivos creados durante las tareas de compilación anteriores_
+`clean`: _Este comando elimina los archivos creados durante las tareas de compilación anteriores_  
 `build`: _Este comando sirve para crear un archivo ejecutable nativo a partir de una aplicación Java_
 :::
 
