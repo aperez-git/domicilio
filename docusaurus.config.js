@@ -131,7 +131,7 @@ const config = {
           },
           */
         ],
-        copyright: `Copyright © 2022 App Domicilio KFC, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © 2023 App Domicilio KFC, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
