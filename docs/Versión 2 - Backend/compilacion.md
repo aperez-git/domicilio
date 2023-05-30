@@ -8,7 +8,7 @@ sidebar_position: 4
 Antes de comenzar, se debe verificar lo siguiente:
 
 - _Docker Desktop_ debe estar funcionando y el parámetro Memoria debe estar fijado a 10 Gb  
-![Docker-memory](/img/Docker-Rammemory.png)
+![Docker-Rammemory-10gb](/img/Docker-Rammemory-10gb.png)
 - Verificar que la conexión a Grupo KFC se encuentre activa:  
 ![Conexion](/img/VPN-Conexion.png)
 :::  
