@@ -58,6 +58,77 @@ En donde `MODULO-NAME` se refiere a:
 - _queue-resolver_
 :::
 
+```shell title="Resultados de la compilación"  
+
+.\gradlew admin:build "-Dquarkus.package.type=native"
+
+Resultado de la ejecución del comando:
+Finished generating 'admin-1.0.0-SNAPSHOT-runner' in 9m 7s.
+
+BUILD SUCCESSFUL in 10m 41s
+13 actionable tasks: 1 executed, 12 up-to-date
+
+.\gradlew :api-domicilio:build -Dquarkus.package.type=native
+
+Resultado del comando en CMD:
+Finished generating 'api-domicilio-1.0.0-SNAPSHOT-runner' in 7m 34s.
+
+BUILD SUCCESSFUL in 8m 29s
+13 actionable tasks: 7 executed, 6 up-to-date
+
+.\gradlew :api-pickup:build -Dquarkus.package.type=native
+
+Resultado de la compilación:
+Finished generating 'api-pickup-1.0.0-SNAPSHOT-runner' in 7m 34s.
+
+BUILD SUCCESSFUL in 8m 37s
+13 actionable tasks: 6 executed, 7 up-to-date
+
+.\gradlew :authenticator:build -Dquarkus.package.type=native
+
+Resultado de la compilación:
+> Task :authenticator:compileJava
+Note: C:\Users\f-perez\IdeaProjects\compras-programadas-rama-V2\authenticator\src\main\java\com\kfc\auth\resources\ApiAuth.java uses unchecked or unsafe operations
+.
+Note: Recompile with -Xlint:unchecked for details.
+Finished generating 'authenticator-1.0.0-SNAPSHOT-runner' in 7m 43s.
+
+BUILD SUCCESSFUL in 8m 41s
+13 actionable tasks: 7 executed, 6 up-to-date
+
+.\gradlew :distribuidor-queue:build -Dquarkus.package.type=native
+
+Resultados de la compilación:
+Finished generating 'distribuidor-queue-1.0.0-SNAPSHOT-runner' in 7m 31s.                                               
+
+BUILD SUCCESSFUL in 8m 26s
+13 actionable tasks: 7 executed, 6 up-to-date
+
+.\gradlew :health:build -Dquarkus.package.type=native
+
+Resultado de la compilación:
+Finished generating 'health-1.0.0-SNAPSHOT-runner' in 7m 36s.
+
+BUILD SUCCESSFUL in 8m 29s
+13 actionable tasks: 7 executed, 6 up-to-date
+
+.\gradlew :log-entry:build: -Dquarkus.package.type=native
+
+Resultados de la compilación:
+Finished generating 'log-entry-1.0.0-SNAPSHOT-runner' in 7m 52s.
+
+BUILD SUCCESSFUL in 8m 50s
+13 actionable tasks: 7 executed, 6 up-to-date
+
+
+.\gradlew :queue-resolver:build -Dquarkus.package.type=native
+
+Resultados de la compilación:
+Finished generating 'queue-resolver-1.0.0-SNAPSHOT-runner' in 8m 16s.                                                   
+
+BUILD SUCCESSFUL in 9m 27s
+13 actionable tasks: 7 executed, 6 up-to-date  
+```  
 
 A continuación, se muestra el proceso realizado desde el editor IntelliJ Idea.
 
