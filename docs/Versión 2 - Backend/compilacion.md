@@ -29,16 +29,16 @@ El proceso de **compilación** requiere la aplicación de los siguientes comando
 
 `Alternativa 1`:  
 ```powershell title="En PowerShell"
-.\gradlew :`MODULO-NAME`:clean  
-
-.\gradlew :`MODULO-NAME`:build -Dquarkus.package.type=native   
-```  
-
-`Alternativa 2`:  
-```shell title="En CMD"
 .\gradlew `MODULO-NAME`:clean  
 
 .\gradlew `MODULO-NAME`:build "-Dquarkus.package.type=native" 
+```  
+
+`Alternativa 2`:  
+```shell title="En CMD"  
+.\gradlew :`MODULO-NAME`:clean  
+
+.\gradlew :`MODULO-NAME`:build -Dquarkus.package.type=native   
 ```  
 
 En donde:  

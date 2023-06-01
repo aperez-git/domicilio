@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Subir las imágenes a Kubernetes
+# Despliegue (deployment) del proyecto en Kubernetes
 
 :::note Ejecución del proceso
 Este proceso involucra tres pasos:  
