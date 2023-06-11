@@ -72,5 +72,14 @@ Para que los pedidos realizados por los clientes lleguen a su destino final (las
 
 El flujo comienza en API DOMICILIO, que recibe el pedido y luego se comunica con el microservicio DISTRIBUIDOR, el cual se encarga de evaluar cuál RESOLVER está inyectando en el momento actual, en la misma tienda que la del pedido que acaba de ingresar:   
 
-![Inyeccion-domicilio](/img/Inyeccion-domicilio.png)
+![Inyeccion-domicilio](/img/Inyeccion-domicilio.png)  
+
+El flujo del proceso anterior requiere el apoyo de una serie de módulos complementarios que lo hacen funcionar al 100%, los cuales son:  
+
+- **HEALTH** permite eliminar cualquier pedido que se haya estancado en la cola actual, para poder reintentarlo más tarde  
+- **AUTH** para manejar el tema de autenticación de usuarios del panel  
+- **ADMIN** permite crear, eliminar, actualizar las conexiones de los locales y usuarios de acceso en el panel  
+- **LOGGER** gestiona los diferentes tipos de errores que se encuentren registrados en la base de datos  
+
+
 
