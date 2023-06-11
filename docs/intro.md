@@ -81,5 +81,6 @@ El flujo del proceso anterior requiere el apoyo de una serie de módulos complem
 - **ADMIN** permite crear, eliminar, actualizar las conexiones de los locales y usuarios de acceso en el panel  
 - **LOGGER** gestiona los diferentes tipos de errores que se encuentren registrados en la base de datos  
 
-
+En el IDE, el sistema luce de la siguiente manera:  
+![App-Domicilio-Modulos](/img/App-Domicilio-Modulos.png)
 
