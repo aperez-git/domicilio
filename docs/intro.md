@@ -75,6 +75,9 @@ JDK 11
 Para compilar se utiliza el JDK 11
 
 MongoDB
-Base de datos de mongodb para nuestra area local
+Base de datos de mongodb para nuestra area local  
 
+
+La siguiente imagen presenta una vista general del sistema App Domicilio:  
+![Vista-general-sistema](/img/Vista-general-sistema.png)
 
