@@ -62,5 +62,15 @@ Lo indicado en el punto anterior requiere un [análisis de los errores](https://
 
 La siguiente imagen presenta una vista general del sistema App Domicilio:  
 
-![Vista-general-sistema](/img/Vista-general-sistema.png)
+![Vista-general-sistema](/img/Vista-general-sistema.png)  
+
+Para que los pedidos realizados por los clientes lleguen a su destino final (las tiendas o restaurantes), se requieren tres módulos, los cuales son:  
+
+- **API Domicilio** 
+- **Distribuidor** 
+- **Queue Resolver**  
+
+El flujo comienza en API DOMICILIO, que recibe el pedido y luego se comunica con el microservicio DISTRIBUIDOR, el cual se encarga de evaluar cuál RESOLVER está inyectando en el momento actual, en la misma tienda que la del pedido que acaba de ingresar:   
+
+![Inyeccion-domicilio](/img/Inyeccion-domicilio.png)
 
