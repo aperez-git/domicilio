@@ -23,7 +23,7 @@ Para su instalación, configuración y operación, el sistema requiere, entre ot
 
 # Pasos  
 
-Como se vió en la [Arquitectura](/intro.md), el sistema Domicilio posee Front-end y Back-end. En el caso del Back-end, se requiere la ejecución de los siguientes pasos, para su puesta en funcionamiento:  
+Como se vió en la [Arquitectura](/intro.md##-Arquitectura-del-proyecto), el sistema Domicilio posee Front-end y Back-end. En el caso del Back-end, se requiere la ejecución de los siguientes pasos, para su puesta en funcionamiento:  
 
 <ol>
   <li>Instalación de Docker</li>
