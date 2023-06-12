@@ -21,12 +21,12 @@ Para su instalación, configuración y operación, el sistema requiere, entre ot
 - **Base de datos**: _MongoDB_, para el área local.  
 - **Antivirus licenciado**, en caso de no contar con uno, se debe instalar el antivirus _Sophos empresarial_.
 
-# Pasos  
+# Puesta en marcha del Backend - Pasos  
 
 Como se vió en la [Arquitectura](/intro.md##-Arquitectura-del-proyecto), el sistema Domicilio posee Front-end y Back-end. En el caso del Back-end, se requiere la ejecución de los siguientes pasos, para su puesta en funcionamiento:  
 
 <ol>
-  <li>Instalación de Docker</li>
+  <li>Instalación de [Docker](Docker.md)</li>
   <li>Instalación de Kong</li>
   <li>Descarga de una rama (clonación) del repositorio</li>
   <li>Compilación del código clonado</li>
