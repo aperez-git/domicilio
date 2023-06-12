@@ -5,9 +5,9 @@ sidebar_position: 1
 # Requerimientos del Sistema Domicilio
 
 La computadora a usar, debe satisfacer los siguientes requerimientos:  
-- Memoria RAM: 16 GB (recomendable)
-- Sistema operativo: Windows 10 en adelante
-- Almacenamiento: 125 GB (mínimo)
+- **Memoria RAM**: 16 GB (recomendable)
+- **Sistema operativo**: Windows 10 en adelante
+- **Almacenamiento**: 125 GB (mínimo)
 
 # Herramientas a instalar  
 
@@ -17,3 +17,15 @@ La computadora a usar, debe satisfacer los siguientes requerimientos:
 - **JDK**: Para compilar se utiliza el _JDK 11_.  
 - **Base de datos**: _MongoDB_, para el área local.  
 - **Antivirus licenciado**, en caso de no contar con uno, se debe instalar el antivirus _Sophos empresarial_.
+
+# Pasos  
+
+<ol>
+  <li>Instalación de Docker</li>
+  <li>Instalación de Kong</li>
+  <li>Descarga de una rama (clonación) del repositorio</li>
+  <li>Compilación del código clonado</li>
+  <li>Despliegue del panel de control de Kubernetes</li>
+  <li>Despliegue del panel de control del Sistema Domicilio</li>
+</ol>  
+  
