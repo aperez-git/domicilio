@@ -26,12 +26,10 @@ Para su instalación, configuración y operación, el sistema requiere, entre ot
 Como se vió en la [Arquitectura](/intro.md##-Arquitectura-del-proyecto), el sistema Domicilio posee Front-end y Back-end. En el caso del Back-end, se requiere la ejecución de los siguientes pasos, para su puesta en funcionamiento:  
 
 - Instalación de [Docker](Docker.md)  
-<ol>
-  <li>Instalación de [Docker](Docker.md)</li>
-  <li>Instalación de Kong</li>
-  <li>Descarga de una rama (clonación) del repositorio</li>
-  <li>Compilación del código clonado</li>
-  <li>Despliegue del panel de control de Kubernetes</li>
-  <li>Despliegue del panel de control del Sistema Domicilio</li>
-</ol>  
+- Instalación de [Kong](Instalacion-Kong.md)  
+- Descarga de una rama ([clonación](Descarga-version.md)) del repositorio  
+- [Compilación](compilacion.md) del código clonado  
+- Despliegue del panel de control de [Kubernetes](Subir-imagenes-Kubernetes.md)  
+
+ 
   
