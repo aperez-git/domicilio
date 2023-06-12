@@ -4,12 +4,15 @@ sidebar_position: 1
 
 # Requerimientos del Sistema Domicilio
 
-La computadora a usar, debe satisfacer los siguientes requerimientos:  
+Para un correcto funcionamiento del sistema, la computadora a usar debe satisfacer los siguientes requerimientos:  
+
 - **Memoria RAM**: 16 GB (recomendable)
 - **Sistema operativo**: Windows 10 en adelante
 - **Almacenamiento**: 125 GB (mínimo)
 
 # Herramientas a instalar  
+
+Para su instalación, configuración y operación, el sistema requiere, entre otras, las siguientes herramientas:  
 
 - **Docker Desktop**: versión _Windows_, o compatible con el sistema operativo.  
 - **Quarkus CLI**: para ejecutar acciones de compilación del proyecto.  
@@ -19,6 +22,8 @@ La computadora a usar, debe satisfacer los siguientes requerimientos:
 - **Antivirus licenciado**, en caso de no contar con uno, se debe instalar el antivirus _Sophos empresarial_.
 
 # Pasos  
+
+Como se vió en la [Arquitectura](/intro.md), el sistema Domicilio posee Front-end y Back-end. En el caso del Back-end, se requiere la ejecución de los siguientes pasos, para su puesta en funcionamiento:  
 
 <ol>
   <li>Instalación de Docker</li>
