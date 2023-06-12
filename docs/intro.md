@@ -84,3 +84,18 @@ El flujo del proceso anterior requiere el apoyo de una serie de módulos complem
 En el IDE, el sistema luce de la siguiente manera:  
 ![App-Domicilio-Modulos](/img/App-Domicilio-Modulos.png)
 
+La arquitectura del sistema Domicilio se basa en: 
+
+- **Microservicios**: arquitectura orientada a servicios (SOA), que organiza una aplicación como una colección de servicios individuales.  
+- **Kubernetes**: plataforma de código abierto de despliegue y gestión de contenedores.  
+
+Para su implementación y despliegue se utiliza lo siguiente:  
+- **Lenguaje de Programación**: Java  
+- **IDE**: IntelliJ, VS Code  
+- **Implementación de microservicios**: Quarkus
+- **Generación de contenedores**: Docker  
+- **Manejo de contenedores**: Kubernetes  
+- **Despliegue**: AKS (Azure), EKS, (Amazon), GKS (Google Cloud)  
+
+
+
