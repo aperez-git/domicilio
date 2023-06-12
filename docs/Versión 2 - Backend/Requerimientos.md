@@ -25,6 +25,7 @@ Para su instalación, configuración y operación, el sistema requiere, entre ot
 
 Como se vió en la [Arquitectura](/intro.md##-Arquitectura-del-proyecto), el sistema Domicilio posee Front-end y Back-end. En el caso del Back-end, se requiere la ejecución de los siguientes pasos, para su puesta en funcionamiento:  
 
+- Instalación de [Docker](Docker.md)  
 <ol>
   <li>Instalación de [Docker](Docker.md)</li>
   <li>Instalación de Kong</li>
