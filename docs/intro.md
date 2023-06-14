@@ -62,7 +62,7 @@ Lo indicado en el punto anterior requiere un [análisis de los errores](https://
 
 La siguiente imagen presenta una vista general del sistema App Domicilio:  
 
-![Vista-general-sistema](/img/Vista-general-sistema.png)  
+![App-Domicilio-Arquitectura](/img/App-Domicilio-Arquitectura.png)  
 
 Para que los pedidos realizados por los clientes lleguen a su destino final (las tiendas o restaurantes), se requieren tres módulos, los cuales son:  
 
