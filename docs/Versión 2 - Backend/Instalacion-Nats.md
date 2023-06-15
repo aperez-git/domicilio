@@ -15,6 +15,12 @@ Dado que son los responsables de hacer que los pedidos realizados por los client
 
 ![App-Domicilio-NATS](/img/App-Domicilio-NATS.png)  
 
+Aquí, se agrega una capa de mensajeria para la comunicación entre microservicios utilizando el esquema Publicador-Suscriptor (Pub/Sub, Publisher/Subscriber).  Esto requiere configurar un nodo como Publicador y otro como Suscriptor
+
+Se puede considerar, como ejemplo, la actualización de los datos de un local. Esa solicitud va a un microservicio especifico, quedando pendiente el envío de esa información a los microservicios que también lo pudieran necesitan. Esta actualización se lleva a cabo utilizando NATS como cluster y el microservicio publicador será el que emita el mensaje y los microservicios subscriptores serán los que reciban los mensajes.  
+
+
+Respecto a como instalar Nats para la arquitectura
 Existen varias alternativas para instalar NATS:  
 - Docker  
 - Kubernetes  
@@ -29,17 +35,17 @@ Existen varias alternativas para instalar NATS:
 ```bash title="1) Agregar repo de NATS"
 helm repo add nats https://nats-io.github.io/k8s/helm/charts/
 ```  
----  
+<br>  
 
 ```bash title="2) Configuración del archivo: "
    `install-config-clustering-seed.yaml`
 ```  
----  
+<br>  
 
 ```bash title="3)Instalación de NATS a través de NATS Helm Charts y el archivo configurado en el paso anterior"
 helm install -n nats nats nats/nats --create-namespace --values install-config-clustering-seed.yaml
 ```  
----  
+<br>  
 
 ```bash title="4)Actualización del archivo de configuración"
 helm upgrade nats nats/nats -n nats --values install-config-clustering-seed.yaml
