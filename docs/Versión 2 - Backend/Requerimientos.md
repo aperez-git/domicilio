@@ -27,9 +27,11 @@ Como se vió en la [Arquitectura](/intro.md##-Arquitectura-del-proyecto), el sis
 
 - Instalación de [Docker](Docker.md)  
 - Instalación de [Kong](Instalacion-Kong.md)  
+- Instalación de [NATS](Instalacion-Nats.md)
 - Descarga de una rama ([clonación](Descarga-version.md)) del repositorio  
 - [Compilación](compilacion.md) del código clonado  
 - Despliegue del panel de control de [Kubernetes](Subir-imagenes-Kubernetes.md)  
+- Despliegue del panel de control de Domicilio  
 
  
   
