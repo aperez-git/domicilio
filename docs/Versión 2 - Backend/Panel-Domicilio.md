@@ -48,4 +48,6 @@ Se procede a ingresar los datos solicitados:
 - Correo electrónico  
 - Contraseña  
 
-Si la verificación de los datos introducidos es exitosa, se podrá ingresar y ver el contenio de la aplicación.  
+Si la verificación de los datos introducidos es exitosa, se podrá ingresar y ver el contenio de la aplicación:  
+
+![App-Domicilio-Panel](/img/App-Domicilio-Panel.png)  
