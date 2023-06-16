@@ -34,3 +34,18 @@ El sistema Domicilio requiere la instalación de:
   <p>npm run start  </p>
 </details>
 </details>
+
+El resultado de la ejecución del último comando termina presentando el siguiente mensaje:  
+
+** Angular Live Development Server is listening on localhost:90, open your browser on http://localhost:90/ **  
+
+El acceso a la aplicación Domicilio se realiza escribiendo la dirección especificada en el mensaje anterior, en el navegador, luego de lo cual aparece el siguiente formulario de entrada:  
+
+![Front-end-Ingreso](/img/Domicilio-Front-end-Ingreso.png)  
+
+
+Se procede a ingresar los datos solicitados:  
+- Correo electrónico  
+- Contraseña  
+
+Si la verificación de los datos introducidos es exitosa, se podrá ingresar y ver el contenio de la aplicación.  
