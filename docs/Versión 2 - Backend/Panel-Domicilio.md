@@ -27,27 +27,15 @@ sidebar_position: 8
 </details>
 
 
-:::note Requisitos: 
-El sistema Domicilio requiere la instalación de:   
-- node js  
-- angular  
-:::
 
-:::note Herramientas a usar en el panel:  
-
-- **Angular**: el lenguaje usado para el desarrollo  de la aplicación  
-- **InttelliJ**: la herramienta usada para la clonación de la rama a usar  
-- **VSCode**:  el ambiente de desarrollo, de preferencia  
-- **node**: la herramienta usada para las descargas  
-:::
-
-Pasos a ejecutar, para lograr el despliegue:  
-En IntelliJ:  
+## Pasos a ejecutar, para lograr el despliegue:  
+  
 En el repositorio, seleccionar la rama master:  
 
 ![Clonacion-de-rama-repositorio](/img/Clonacion-de-rama-repositorio.png)  
 
-Creación de nuevo proyecto en IntelliJ, para alojar la rama a clonar:  
+En IntelliJ:  
+Creación de nuevo proyecto, para alojar la rama a clonar:  
 
 ![Clonacion-de-rama-repositorio](/img/Nuevo-Proyecto-IntelliJ.png)  
 
