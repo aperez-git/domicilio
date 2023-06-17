@@ -31,7 +31,7 @@ En el campo `URL`, se pega la dirección seleccionada en el repositorio y, en el
 
 ![Dirección-URL-especificación-destino](/img/Pegado-dirección-URL-especificación-directorio-destino.png)  
 
-El proceso de clonación va a traer la rama **master** del proyecto, por lo que hay que proceder a ejecutar la opción `Checkout`, para obtener la rama requerida:  
+El proceso de clonación va a traer la rama **master** del proyecto, por lo que hay que proceder a ejecutar la opción `Git Branch`, seguido de `Checkout`, para obtener la rama requerida:  
 
 ![Git-branch-Especificacion-de-rama-y-Checkout](/img/Git-branch-Especificacion-de-rama-y-Checkout.png)  
 
