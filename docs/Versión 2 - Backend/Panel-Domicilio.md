@@ -17,12 +17,30 @@ El sistema Domicilio requiere la instalación de:
 - **node**: la herramienta usada para las descargas  
 :::
 
+Pasos a ejecutar, para lograr el despliegue:  
+En IntelliJ:  
+En el repositorio, seleccionar la rama master:  
+
+![Clonacion-de-rama-repositorio](/img/Clonacion-de-rama-repositorio.png)  
+
+Creación de nuevo proyecto en IntelliJ, para alojar la rama a clonar:  
+
+![Clonacion-de-rama-repositorio](/img/Nuevo-Proyecto-IntelliJ.png)  
+
+En el campo `URL`, se pega la dirección seleccionada en el repositorio y, en el campo `Directory`, se especifica el directorio destino para la rama:  
+
+![Dirección-URL-especificación-destino](/img/Pegado-dirección-URL-especificación-directorio-destino.png)  
+
+El proceso de clonación va a traer la rama **master** del proyecto, por lo que hay que proceder a ejecutar la opción `Checkout`, para obtener la rama requerida:  
+
+![Git-branch-Especificacion-de-rama-y-Checkout](/img/Git-branch-Especificacion-de-rama-y-Checkout.png)  
 
 <details>
 <summary>Pasos a ejecutar, para lograr el despliegue:</summary>
 <details>
   <summary>En IntelliJ:</summary>
-  <p>Clonar la rama master</p>  
+  Clonar la rama master 
+  ![Clonacion-de-rama-repositorio](/img/Clonacion-de-rama-repositorio.png) 
   <p>Efectuada la clonación, se especifica la rama del proyecto con la que se va a trabajar, a través de la opción Checkout.</p>
 </details>
 
@@ -42,8 +60,6 @@ El resultado de la ejecución del último comando termina presentando el siguien
 
 <details>
   <summary>** Angular Live Development Server is listening on localhost:90, open your browser on http://localhost:90/ **</summary>
-  <p>Clonar la rama master</p>  
-  <p>Efectuada la clonación, se especifica la rama del proyecto con la que se va a trabajar, a través de la opción Checkout.</p>
 
 
 ```js
