@@ -6,22 +6,24 @@ sidebar_position: 8
 
 <details>
 <summary>Requisitos y Herramientas a usar</summary>
-<details>
-  <summary>Requisitos:</summary>
-  El panel del sistema Domicilio requiere la instalación de:   
+  <details>
+    <summary>Requisitos:</summary>
+    El panel del sistema Domicilio requiere la instalación de:   
 
-  - node js  
-  - angular 
-</details>
+    - node js  
+    - angular  
 
-<details>
-  <summary>Herramientas:</summary>
+  </details>
 
-  - **Angular**: el lenguaje usado para el desarrollo  de la aplicación  
-  - **InttelliJ**: la herramienta usada para la clonación de la rama a usar  
-  - **VSCode**:  el ambiente de desarrollo, de preferencia  
-  - **node**: la herramienta usada para las descargas  
-</details>
+  <details>
+    <summary>Herramientas:</summary>
+
+    - **Angular**: el lenguaje usado para el desarrollo  de la aplicación  
+    - **InttelliJ**: la herramienta usada para la clonación de la rama a usar  
+    - **VSCode**:  el ambiente de desarrollo, de preferencia  
+    - **node**: la herramienta usada para las descargas  
+    
+  </details>
 </details>
 
 
