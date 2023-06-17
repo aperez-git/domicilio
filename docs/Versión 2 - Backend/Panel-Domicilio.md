@@ -54,29 +54,12 @@ En VS Code, ubicación de la carpeta que contiene el proyecto:
 
 ![VSCode-Rama-seleccionada](/img/VSCode-Rama-seleccionada.png)  
 
-
-<details>
-<summary>Pasos a ejecutar, para lograr el despliegue:</summary>
-<details>
-  <summary>En IntelliJ:</summary>
-  Clonar la rama master 
-  ![Clonacion-de-rama-repositorio](/img/Clonacion-de-rama-repositorio.png) 
-  <p>Efectuada la clonación, se especifica la rama del proyecto con la que se va a trabajar, a través de la opción Checkout.</p>
-</details>
-
-<details>
-  <summary>En VS Code:</summary>
-  <p>Ubicación de la carpeta que contiene el proyecto</p> 
-  <p>En la opción Terminal, ejecutar los siguientes comandos: </p> 
-  <p>npm install --force  </p>
-  <p>npm run start  </p>
-</details>
-</details>
+En la opción Terminal, ejecutar los siguientes comandos:  
+npm install --force  
+npm run start  
 
 El resultado de la ejecución del último comando termina presentando el siguiente mensaje:  
 
-
-** Angular Live Development Server is listening on localhost:90, open your browser on http://localhost:90/ **  
 
 <details>
   <summary>** Angular Live Development Server is listening on localhost:90, open your browser on http://localhost:90/ **</summary>
