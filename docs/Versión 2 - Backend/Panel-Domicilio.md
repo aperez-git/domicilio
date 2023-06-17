@@ -35,6 +35,9 @@ El proceso de clonación va a traer la rama **master** del proyecto, por lo que 
 
 ![Git-branch-Especificacion-de-rama-y-Checkout](/img/Git-branch-Especificacion-de-rama-y-Checkout.png)  
 
+Visualización de la rama clonada:  
+![Verificación-rama-clonada](/img/Sistemas_Pedidos_Delivery-Verificación-rama-clonada.png)
+
 <details>
 <summary>Pasos a ejecutar, para lograr el despliegue:</summary>
 <details>
