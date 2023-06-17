@@ -38,6 +38,11 @@ El proceso de clonación va a traer la rama **master** del proyecto, por lo que 
 Visualización de la rama clonada:  
 ![Verificación-rama-clonada](/img/Sistemas_Pedidos_Delivery-Verificación-rama-clonada.png)
 
+En VS Code, ubicación de la carpeta que contiene el proyecto:  
+
+![VSCode-Rama-seleccionada](/img/VSCode-Rama-seleccionada.png)  
+
+
 <details>
 <summary>Pasos a ejecutar, para lograr el despliegue:</summary>
 <details>
