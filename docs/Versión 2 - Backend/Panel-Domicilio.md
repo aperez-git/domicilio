@@ -50,13 +50,18 @@ El proceso de clonación va a traer la rama **master** del proyecto, por lo que 
 Visualización de la rama clonada:  
 ![Verificación-rama-clonada](/img/Sistemas_Pedidos_Delivery-Verificación-rama-clonada.png)
 
-En VS Code, ubicación de la carpeta que contiene el proyecto:  
+En VS Code:  
+Ubicación de la carpeta que contiene el proyecto:  
 
 ![VSCode-Rama-seleccionada](/img/VSCode-Rama-seleccionada.png)  
 
-En la opción Terminal, ejecutar los siguientes comandos:  
+
+```bash title="En la opción Terminal, ejecutar los siguientes comandos:"  
+
 npm install --force  
+
 npm run start  
+```  
 
 El resultado de la ejecución del último comando termina presentando el siguiente mensaje:  
 
