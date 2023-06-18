@@ -31,7 +31,7 @@ Como se vió en la [Arquitectura](/intro.md##-Arquitectura-del-proyecto), el sis
 - Descarga de una rama ([clonación](Descarga-version.md)) del repositorio  
 - [Compilación](compilacion.md) del código clonado  
 - Despliegue del panel de control de [Kubernetes](Subir-imagenes-Kubernetes.md)  
-- Despliegue del panel de control de Domicilio  
+- Despliegue del [panel de control](Panel-Domicilio.md) de Domicilio  
 
  
   
