@@ -2,6 +2,7 @@
   "label": "Versión 2 - Frontend",
   "position": 4,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Documentación de la versión 2 del sistema App Domicilio."
   }
 }
