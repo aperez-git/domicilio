@@ -1,6 +1,21 @@
-# Payload - Pickup Canje y Acumulación  
+# Payload - Canje y Acumulación  
 
-```jsx title="Payload para Pickup Canje y Acumulación de puntos"
+:::note CANJE Y ACUMULACION: 
+Proceso en el cual el cliente puede seleccionar 2 o más productos en una aplicación, los cuales puede canjear por productos a los cuales les alcance el puntaje y comprar el resto con su dinero; esta transacción se conoce como _CANJE Y ACUMULACION_.
+:::  
+
+# PAYLOAD DE INYECCION MODALIDAD "CANJE Y ACUMULACION"  
+
+En el Payload que se muestra a continuación, se encuentran los datos para una transacción de canje Y acumulación donde en el mismo especifica dentro del apartado PRINCIPAL:  
+
+```jsx  
+"redeemPoints": true
+"accumulatePoints": true
+```  
+
+Estos datos especifican que el Payload contiene activo tanto el _CANJE_ como la _ACUMULACION_
+
+```jsx title="Payload para Canje y Acumulación de puntos"
 {
     "orderId": "0000001713-020203",
     "accountId": 2,
