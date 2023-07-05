@@ -1,6 +1,15 @@
 # Payload - Acumulación  
 
-```jsx title="Payload para Acumulación de puntos"
+:::info ACUMULACION:   
+Proceso por el cual los clientes a través de sus compras acumulan puntos ($1 = 2pts)
+:::  
+
+# PAYLOAD DE INYECCION MODALIDAD "CANJE"  
+
+En el Payload que se muestra a continuación, se encuentran los datos para una transacción de canje, en donde se especifica, dentro del apartado PRINCIPAL: `"redeemPoints": true`, que indica si este Payload tiene canje/redención de puntos. Además, se complementa dentro del apartado `additionalInfo` con el campo: `"redeemed": true` que especifica `TRUE` para saber cuál(es) producto(s) fue o fueron **CANJEADOS**. 
+
+
+```jsx title="PAYLOAD DE INYECCION MODALIDAD 'ACUMULACION'"
 {
     "orderId": "0000001712-020203",
     "accountId": 2,
