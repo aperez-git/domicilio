@@ -1,6 +1,14 @@
-# Payload - Pickup Canje  
+# Payload - Canje  
 
-```jsx title="Payload para Pickup Canje de puntos"
+:::note CANJE: 
+Proceso en el cual el cliente puede canjear sus puntos totales acumulados por productos que estén dentro del alcance de puntos. 
+:::  
+
+# PAYLOAD DE INYECCION MODALIDAD "CANJE"  
+
+En el Payload, que se muestra a continuación, se encuentran los datos para una transacción de canje, donde en el mismo especifica, dentro del apartado PRINCIPAL: `"redeemPoints": true`, que indica si este Payload tiene canje/redención de puntos. Además, se complementa dentro del apartado **additionalInfo** con el campo: `"redeemed": true`, que especifica _TRUE_, para saber cuál(es) producto(s) fue o fueron CANJEADOS. 
+
+```jsx title="Payload para Canje de puntos"
 {
     "orderId": "0000001680-020203",
     "accountId": 2,
