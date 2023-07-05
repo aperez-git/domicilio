@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---  
+
 # FIDELIZACIÓN EN GRUPO KFC.  
 
 El proceso de fidelización de clientes, dentro del grupo KFC, se encuentra tanto para el **Counter** (en el local), como para las Apps de **Amigos Juan Valdez** y **Appedir**.  
