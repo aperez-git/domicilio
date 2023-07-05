@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---  
+
 # Payload - Canje y Acumulación  
 
 :::note CANJE Y ACUMULACION: 
