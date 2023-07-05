@@ -12,4 +12,6 @@ Este mecanismo de fidelización, dirigido hacia los clientes, se basa en la moda
 
 EL funcionamiento técnico para los procesos de fidelización dentro de las APPS, se realiza a través de los siguientes Payloads: 
 
-
+- [CANJE](/docs/Payloads_Pruebas_Inyeccion/Payloads/Payload_Canje.md)     
+- [ACUMULACION](/docs/Payloads_Pruebas_Inyeccion/Payloads/Payload_Acumulacion.md)  
+- [CANJE Y ACUMULACION](/docs/Payloads_Pruebas_Inyeccion/Payloads/Canje_Acumulacion.md)  
