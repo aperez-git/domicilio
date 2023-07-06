@@ -1,8 +1,8 @@
 {
-  "label": "Payloads para Pruebas de Inyección",
+  "label": "Fidelización - Procesos",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Documentación del funcionamiento técnico para los procesos de fidelización dentro de las APPS."
+    "description": "Procesos de fidelización dentro de las APPS."
   }
 }
