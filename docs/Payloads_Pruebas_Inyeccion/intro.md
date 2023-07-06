@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---  
 
-# FIDELIZACIÓN EN GRUPO KFC.  
+# FIDELIZACIÓN EN GRUPO KFC  
 
 El proceso de fidelización de clientes, dentro del grupo KFC, se encuentra tanto para el **Counter** (en el local), como para las Apps de **Amigos Juan Valdez** y **Appedir**.  
 
@@ -12,6 +12,9 @@ Este mecanismo de fidelización, dirigido hacia los clientes, se basa en la moda
 
 EL funcionamiento técnico para los procesos de fidelización dentro de las APPS, se realiza a través de los siguientes Payloads: 
 
-- [CANJE](/docs/Payloads_Pruebas_Inyeccion/Payloads/Payload_Canje.md)     
-- [ACUMULACION](/docs/Payloads_Pruebas_Inyeccion/Payloads/Payload_Acumulacion.md)  
-- [CANJE Y ACUMULACION](/docs/Payloads_Pruebas_Inyeccion/Payloads/Canje_Acumulacion.md)  
+- CANJE  
+- ACUMULACION  
+- CANJE Y ACUMULACION  
+
+El detalle de cada payload, así como los campos clave se presentan en los siguientes apartados.  
+  
