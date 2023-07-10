@@ -9,7 +9,7 @@ sidebar_position: 5
 
 En el Payload que se muestra a continuación, se encuentran los datos para una transacción que no tiene  canje ni acumulación, donde en el mismo especifica dentro del apartado PRINCIPAL:  
 
-```jsx  
+```jsx  title="Datos para la transacción"
     "accumulatePoints": false,
     "redeemPoints": false,
 ```  
